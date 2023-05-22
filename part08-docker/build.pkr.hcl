@@ -18,6 +18,8 @@ build {
       "FOO=example variable"
     ]
     inline = [
+      # 30 second for fully bootup system
+      "sleep 30"
       "echo installing vim package",
       "apt-get update",
       "apt-get install vim -y",
