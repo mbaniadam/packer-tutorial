@@ -5,7 +5,7 @@ variable "image_name" {
 
 variable "build_name" {
   type    = string
-  default = "my-ubuntu"
+  default = "packer-ubuntu"
 }
 
 variable "build_source" {
@@ -15,12 +15,12 @@ variable "build_source" {
 
 variable "build_repo" {
   type    = string
-  default = "hashicorp/packer"
+  default = "packer-ubuntu"
 }
 
 variable "build_tags" {
   type    = list(string)
-  default = ["0.6", "anothertag"]
+  default = ["1.0", "latest"]
 }
 
 variable "login_server" {
